@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    overflow-x: hidden
+}
+
+.carousel-item {
+    height: 85vh;
+    background: #000;
+    color: white;
+    position: relative;
+    
+}
+
+.container-slider{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-left: 0;
+    padding-bottom: 50px;
+}
+
+.overlay-image {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.6;
+}
+
+.section {
+    padding-top: 4rem;
+}
+
+.banner-img {
+    position: relative;
+    background-position: center center;     
+    background-size: cover;    
+    background-repeat: no-repeat;
+    height: 500px;
+}
+
+.banner-img>img{
+    height: 100%;
+    scale: 1.5;
+}
+
+.banner-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: white;
+}
+
+.banner-produk {
+    position: relative;
+    background-size: cover;
+    height: 250px;
+}
+
+.banner-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.section-content >.content-box > .content-img > iframe {
+    width: 500px;
+}
+
+#footer {
+    background-color: #f0f0f0;
+}
+
+#footer>.container>.row>.sosmed>a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+#footer>.container>.row>.sosmed>a>.facebook:hover {
+    color: rgb(25, 0, 255);
+    text-decoration: none;
+}
+#footer>.container>.row>.sosmed>a>.instagram:hover {
+    color: rgb(183, 43, 50);
+    text-decoration: none;
+}
+#footer>.container>.row>.sosmed>a>.whatsapp:hover {
+    color: rgb(0, 255, 0);
+    text-decoration: none;
+}
+
+
+@media(max-width:1091px) {
+    .banner-img>img {
+        transform: scale(2); 
+        transition: 2s ease-in-out;
+        background-position: center center;     
+        background-size: cover;
+    }
+    .banner-img>.banner-content>a {
+        visibility: hidden; 
+    }
+
+    .banner-produk>img {
+        height: 200px;
+        object-position: center center;
+
+    }
+
+    iframe {
+        transition: 1s ease-in-out;
+        width: 250px;
+        height: 200px;
+        -webkit-transition: 1s ease-in-out;
+        -moz-transition: 1s ease-in-out;
+        -ms-transition: 1s ease-in-out;
+        -o-transition: 1s ease-in-out;
+}
+
+}

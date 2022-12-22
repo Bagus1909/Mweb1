@@ -1,0 +1,6 @@
+budget
+kegunaan
+medan
+tipe mesin
+penggerak
+transmisi
